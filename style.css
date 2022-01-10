@@ -1,0 +1,12 @@
+input[type="submit"],
+button,
+[aria-label] {
+  cursor: pointer;
+}
+#editList {
+  display: none;
+}
+#counter {
+  font-weight: bold;
+}
+

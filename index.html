@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class List CRUD OP</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- crate class list form/add a new learner in the list -->
+    <h1>Class List</h1>
+    <form action="javacript:void(0);" onsubmit="addLearner()">
+    <input type="text" id="add-name" placeholder="Add new learner">
+    <input type="submit" value="Add">
+  </form>
+<!-- edit/add learner names from the list-->
+  <div id="editList">
+      <form action="javascript:void(0);" id="saveEdit">
+          <input type="text" id="edit-name">
+          <input type="submit" value="Edit">
+          <a onclick="closeInput()" aria-label="Close">&#10006;</a>
+      </form>
+  </div>
+ <!-- display how many learners are in the list -->
+
+<p id="counter"></p>
+
+<!-- display the list in a table format -->
+<table>
+    <tr>
+        <th id="name">Learners' names:</th> 
+    </tr>
+    <tbody id="learners"></tbody>
+</table>
+<script src="script.js"></script>
+</body>
+</html>
